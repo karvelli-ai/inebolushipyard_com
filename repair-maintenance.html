@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repair & Maintenance | Inebolu Shipyard</title>
+    <meta name="description"
+        content="Inebolu Shipyard Repair & Maintenance: Rapid, reliable docking and technical services on Turkey's Black Sea coast." />
+</head>
+
+<body class="font-sans antialiased text-slate-800 bg-white">
+    <div id="app">
+        <!-- Header -->
+        <header class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm"
+            id="header">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/index.html">
+                            <img src="/images/inebolu-logo-1.png" alt="Inebolu Shipyard" class="h-20 w-auto" />
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <nav class="hidden md:flex space-x-8 items-center">
+                        <a href="/index.html#home"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+                        <a href="/about.html"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About Us</a>
+
+                        <!-- Services DropdownWrapper -->
+                        <div class="relative group">
+                            <button
+                                class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center">
+                                Services
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <!-- Dropdown -->
+                            <div
+                                class="absolute left-0 mt-2 w-56 bg-white border border-slate-100 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                                <a href="/new-building.html"
+                                    class="block px-4 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 first:rounded-t-lg">New
+                                    Building</a>
+                                <a href="/repair-maintenance.html"
+                                    class="block px-4 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600">Repair
+                                    & Maintenance</a>
+                                <a href="/conversion.html"
+                                    class="block px-4 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 last:rounded-b-lg">Conversion</a>
+                            </div>
+                        </div>
+
+                        <a href="/projects.html"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                        <a href="/contact.html"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Panel -->
+            <div id="mobile-menu"
+                class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full h-screen overflow-y-auto pb-20">
+                <div class="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+                    <a href="/index.html#home"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">Home</a>
+                    <a href="/about.html"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">About
+                        Us</a>
+                    <div class="block px-3 py-2">
+                        <span class="text-base font-medium text-slate-600">Services</span>
+                        <div class="pl-4 mt-2 space-y-1 border-l-2 border-slate-100">
+                            <a href="/new-building.html"
+                                class="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-md">New
+                                Building</a>
+                            <a href="/repair-maintenance.html"
+                                class="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-md">Repair
+                                & Maintenance</a>
+                            <a href="/conversion.html"
+                                class="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-md">Conversion</a>
+                        </div>
+                    </div>
+                    <a href="/projects.html"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">Projects</a>
+                    <a href="/contact.html"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="bg-slate-900 pt-32 pb-20 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-gradient-to-r from-blue-900 to-slate-900 opacity-90"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Repair & Maintenance</h1>
+                <p class="text-xl text-blue-200">Rapid, reliable docking and technical services.</p>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-3">Overview</h2>
+                <h3 class="text-3xl font-bold text-slate-900 mb-6">Minimizing Downtime, Maximizing Performance</h3>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    In the demanding maritime industry, downtime is the enemy of profitability. INEBOLU SHIPYARD
+                    provides rapid, reliable, and high-quality repair and maintenance services designed to return your
+                    vessels to sea in peak condition.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    As the only shipyard on Turkey’s Black Sea coast equipped with a floating dock, we offer a strategic
+                    advantage for vessels operating in the region, providing "all-in-one" technical support from
+                    emergency troubleshooting to scheduled class surveys.
+                </p>
+            </div>
+        </section>
+
+        <!-- Core Maintenance Services -->
+        <section class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-bold text-slate-900">Core Maintenance Services</h3>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Our facility is equipped to handle comprehensive
+                        lifecycle support for your fleet.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Dry-Docking & Hull Care</h4>
+                        <p class="text-slate-600">Utilizing our 4,500-ton lifting capacity floating dock, we perform
+                            high-pressure washing (up to 2,500 bar), grit blasting, and precision anti-fouling
+                            applications.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Mechanical & Engine Repairs</h4>
+                        <p class="text-slate-600">Comprehensive overhauling of main engines and auxiliaries, including
+                            turbocharger servicing, pump repairs, and gearbox maintenance.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Steel & Piping Works</h4>
+                        <p class="text-slate-600">Expert fabrication and renewal of mild steel, high-tensile steel, and
+                            stainless steel plates, with production rates optimized to minimize time in dock.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Propulsion & Steering</h4>
+                        <p class="text-slate-600">Specialized repairs for rudders, shafts, and propellers, including
+                            polishing and alignment services to enhance fuel economy.</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Electrical & Automation</h4>
+                        <p class="text-slate-600">Troubleshooting and installation of navigation systems, communication
+                            equipment, and shipboard automation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Facilities / Table -->
+        <section class="py-20 bg-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold text-slate-900 mb-10 text-center">Our Technical Facilities</h3>
+                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-300">
+                        <thead class="bg-slate-50">
+                            <tr>
+                                <th scope="col"
+                                    class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-slate-900 sm:pl-6">
+                                    Facility</th>
+                                <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-slate-900">
+                                    Capacity / Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white">
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">
+                                    Floating Dock</td>
+                                <td class="px-3 py-4 text-sm text-slate-500">Handles vessels up to 130m length and 19.5m
+                                    width.</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">
+                                    Repair Berths</td>
+                                <td class="px-3 py-4 text-sm text-slate-500">Three berths (120m to 180m) for afloat
+                                    repairs and outfitting.</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">
+                                    Lifting Power</td>
+                                <td class="px-3 py-4 text-sm text-slate-500">Multiple cranes with capacities up to 25
+                                    tons.</td>
+                            </tr>
+                            <tr>
+                                <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-slate-900 sm:pl-6">
+                                    Specialized Shops</td>
+                                <td class="px-3 py-4 text-sm text-slate-500">Dedicated metalworking, machine-assembly,
+                                    and electrical workshops.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Inebolu Advantage -->
+        <section class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-3xl font-bold mb-12 text-center">The Inebolu Advantage</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                        <h4 class="text-xl font-bold mb-4 text-blue-400">Black Sea Strategic Location</h4>
+                        <p class="text-slate-300">Minimize deviation costs with our specialized facility located
+                            directly on the Black Sea coast.</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                        <h4 class="text-xl font-bold mb-4 text-blue-400">Class-Certified Quality</h4>
+                        <p class="text-slate-300">All repair stages are monitored by expert engineers and carried out
+                            under the supervision of major Classification Societies.</p>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-xl border border-slate-700">
+                        <h4 class="text-xl font-bold mb-4 text-blue-400">24/7 Response Time</h4>
+                        <p class="text-slate-300">We guarantee a rapid response at our shipyard to avoid costly delays
+                            and operational disruptions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 bg-blue-600 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-6">Minimizing Downtime, Maximizing Performance.</h2>
+                <p class="text-lg bg-blue-600 text-white mb-10">
+                    Contact the INEBOLU SHIPYARD technical team today for a docking slot availability or an emergency
+                    repair quote.
+                </p>
+                <a href="/contact.html"
+                    class="inline-block px-8 py-4 bg-white text-blue-600 font-bold rounded-lg shadow-lg hover:bg-slate-100 transition-colors">
+                    Request a Quote
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <img src="/images/inebolu-logo-1.png" alt="Inebolu Shipyard" class="h-10 w-auto opacity-80" />
+                    <p class="text-sm mt-2">&copy; 2025 Inebolu Shipyard. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <!-- Socialplaceholders -->
+                    <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

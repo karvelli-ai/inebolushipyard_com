@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Inebolu Shipyard</title>
+    <meta name="description"
+        content="Inebolu Shipyard: A Karavelioglu Family Company since 1916. Combining century-old tradition with modern naval technology." />
+</head>
+
+<body class="font-sans antialiased text-slate-800 bg-white">
+    <div id="app">
+        <!-- Header -->
+        <header class="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm"
+            id="header">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/index.html">
+                            <img src="/images/inebolu-logo-1.png" alt="Inebolu Shipyard" class="h-20 w-auto" />
+                        </a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <nav class="hidden md:flex space-x-8 items-center">
+                        <a href="/index.html#home"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+                        <a href="/about.html"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">About Us</a>
+
+                        <!-- Services DropdownWrapper -->
+                        <div class="relative group">
+                            <button
+                                class="text-slate-600 hover:text-blue-600 font-medium transition-colors flex items-center">
+                                Services
+                                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <!-- Dropdown -->
+                            <div
+                                class="absolute left-0 mt-2 w-56 bg-white border border-slate-100 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-2 group-hover:translate-y-0">
+                                <a href="/new-building.html"
+                                    class="block px-4 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 first:rounded-t-lg">New
+                                    Building</a>
+                                <a href="/repair-maintenance.html"
+                                    class="block px-4 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600">Repair
+                                    & Maintenance</a>
+                                <a href="/conversion.html"
+                                    class="block px-4 py-3 text-sm text-slate-700 hover:bg-blue-50 hover:text-blue-600 last:rounded-b-lg">Conversion</a>
+                            </div>
+                        </div>
+
+                        <a href="/projects.html"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Projects</a>
+                        <a href="/contact.html"
+                            class="text-slate-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <div class="md:hidden flex items-center">
+                        <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Panel -->
+            <div id="mobile-menu"
+                class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full h-screen overflow-y-auto pb-20">
+                <div class="px-4 pt-2 pb-6 space-y-1 shadow-lg">
+                    <a href="/index.html#home"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">Home</a>
+                    <a href="/about.html"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">About
+                        Us</a>
+                    <div class="block px-3 py-2">
+                        <span class="text-base font-medium text-slate-600">Services</span>
+                        <div class="pl-4 mt-2 space-y-1 border-l-2 border-slate-100">
+                            <a href="/new-building.html"
+                                class="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-md">New
+                                Building</a>
+                            <a href="/repair-maintenance.html"
+                                class="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-md">Repair
+                                & Maintenance</a>
+                            <a href="/conversion.html"
+                                class="block px-3 py-2 text-sm font-medium text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-md">Conversion</a>
+                        </div>
+                    </div>
+                    <a href="/projects.html"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">Projects</a>
+                    <a href="/contact.html"
+                        class="block px-3 py-2 text-base font-medium text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-md">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="bg-slate-900 pt-32 pb-20 relative overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full bg-gradient-to-r from-blue-900 to-slate-900 opacity-90"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">About INEBOLU SHIPYARD</h1>
+                <p class="text-xl text-blue-200">A Legacy of Trust: A Karavelioglu Family Company</p>
+            </div>
+        </section>
+
+        <!-- Heritage Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-blue-600 font-semibold tracking-wide uppercase text-sm mb-3">Our History</h2>
+                <h3 class="text-3xl font-bold text-slate-900 mb-6">A Century of Engineering Excellence</h3>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    INEBOLU SHIPYARD is more than just a maritime facility; it is a vital pillar of the
+                    <strong>KARAVELIOGLU COMPANIES GROUP</strong>,
+                    a family-owned industrial powerhouse with a history spanning over a century. Since the group’s
+                    foundation in 1916,
+                    the Karavelioglu name has stood for tradition, resilience, and engineering excellence.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Established in 2008 to bring this expertise to the Black Sea coast, Inebolu Shipyard operates as a
+                    family-run enterprise
+                    where long-term relationships and quality craftsmanship take priority. Being a member of a group
+                    with over 100 years of
+                    experience allows us to combine historical wisdom with modern naval technology.
+                </p>
+            </div>
+        </section>
+
+        <!-- Track Record Stats -->
+        <section class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl font-bold text-slate-900">Proven Industrial Track Record</h3>
+                    <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Since our gates first opened, we have served the
+                        international
+                        maritime community with unwavering dedication.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Operational Excellence -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Operational Excellence</h4>
+                        <p class="text-slate-600">We have successfully performed hundreds of vessel repairs, ensuring
+                            the safety and efficiency of the global merchant fleet.</p>
+                    </div>
+                    <!-- Specialized Construction -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Specialized Construction</h4>
+                        <p class="text-slate-600">Our portfolio includes the successful production of one bunker ship
+                            and two tugboats, demonstrating our ability to deliver high-performance, mission-critical
+                            vessels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation / New Yacht Series -->
+        <section class="py-20 bg-slate-900 text-white overflow-hidden relative">
+            <div class="absolute inset-0 z-0 opacity-10">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1" />
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+
+            <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3">Innovation for 2026
+                    </h2>
+                    <h3 class="text-3xl md:text-5xl font-bold mb-6">The New Yacht Series</h3>
+                    <p class="text-lg text-slate-300 max-w-3xl mx-auto">
+                        We are proud to announce a new collaborative milestone. The KARAVELIOGLU COMPANIES GROUP is
+                        launching two visionary yacht projects,
+                        with INEBOLU SHIPYARD serving as the dedicated builder. A shift toward high-tech aluminum
+                        construction and luxury design.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Project 1 -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-slate-700 shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-9xl font-bold text-white">43'</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-2">43ft Aluminum Yacht</h4>
+                        <span class="inline-block px-3 py-1 bg-blue-600 text-xs font-bold rounded-full mb-6">CE Class
+                            B</span>
+                        <p class="text-slate-300 mb-8 border-l-4 border-blue-500 pl-4">Engineered for offshore
+                            durability and performance.</p>
+
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="bg-slate-800 p-3 rounded-lg">
+                                <span class="block text-slate-400 text-xs uppercase">Production Start</span>
+                                <span class="font-bold text-white">February 2026</span>
+                            </div>
+                            <div class="bg-slate-800 p-3 rounded-lg">
+                                <span class="block text-slate-400 text-xs uppercase">Timeline</span>
+                                <span class="font-bold text-white">Fixed: 5 Months</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 border border-slate-700 shadow-2xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="text-9xl font-bold text-white">49'</span>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-2">49ft House Yacht</h4>
+                        <span class="inline-block px-3 py-1 bg-blue-600 text-xs font-bold rounded-full mb-6">CE Class
+                            C</span>
+                        <p class="text-slate-300 mb-8 border-l-4 border-blue-500 pl-4">A pioneering concept in maritime
+                            lifestyle, combining residential comfort with naval mobility.</p>
+
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="bg-slate-800 p-3 rounded-lg">
+                                <span class="block text-slate-400 text-xs uppercase">Production Start</span>
+                                <span class="font-bold text-white">February 2026</span>
+                            </div>
+                            <div class="bg-slate-800 p-3 rounded-lg">
+                                <span class="block text-slate-400 text-xs uppercase">Timeline</span>
+                                <span class="font-bold text-white">Fixed: 6 Months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values CTA -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-6 text-slate-900">Tradition Meets Transformation</h2>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                    At INEBOLU SHIPYARD, we are building the future on a foundation laid in 1916. As we transition from
+                    heavy industrial ships to the refined world of aluminum yachts, our core mission remains the same:
+                    to deliver vessels that reflect the strength, integrity, and prestige of the Karavelioglu family
+                    name.
+                </p>
+                <div class="p-8 bg-blue-50 rounded-2xl border border-blue-100">
+                    <h3 class="text-2xl font-serif italic text-blue-900 mb-4">"A Century in the Making"</h3>
+                    <p class="text-slate-700 mb-8">Whether it is a commercial fleet or a private luxury project, we
+                        invite you to experience the reliability of a century-old tradition.</p>
+                    <a href="/contact.html"
+                        class="inline-block px-8 py-4 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition-colors">
+                        Partner With Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <img src="/images/inebolu-logo-1.png" alt="Inebolu Shipyard" class="h-10 w-auto opacity-80" />
+                    <p class="text-sm mt-2">&copy; 2025 Inebolu Shipyard. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <!-- Socialplaceholders -->
+                    <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition-colors">Facebook</a>
+                    <a href="#" class="hover:text-white transition-colors">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
